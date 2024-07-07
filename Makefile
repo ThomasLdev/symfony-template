@@ -59,3 +59,19 @@ sf: ## List all Symfony commands or pass the parameter "c=" to run a given comma
 
 cc: c=c:c ## Clear the cache
 cc: sf
+
+## —— Tools 🎵 ———————————————————————————————————————————————————————————————
+
+phpstan:
+	@$(PHP_CONT) tools/phpstan/vendor/bin/phpstan analyse src --level=9
+
+phpmd:
+	@$(PHP_CONT) tools/phpmd/vendor/bin/phpmd src text phpmd.xml
+
+phpcs:
+	@$(PHP_CONT) tools/php-cs-fixer/vendor/bin/php-cs-fixer fix src
+
+## —— Tests 🎵 ———————————————————————————————————————————————————————————————
+
+phpunit:
+	@$(PHP_CONT) tools/phpunit/vendor/bin/phpunit --configuration phpunit.xml

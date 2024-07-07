@@ -51,3 +51,12 @@
 # Embedded web-server pid file
 /.web-server-pid
 .idea
+
+###> symfony/phpunit-bridge ###
+.phpunit.result.cache
+###< symfony/phpunit-bridge ###
+
+/assets/vendor
+/tools/*/vendor
+.phpunit.cache
+.php-cs-fixer.cache
