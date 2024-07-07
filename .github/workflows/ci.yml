@@ -45,10 +45,6 @@ jobs:
       - name: Run migrations
         if: false # Remove this line if Doctrine Migrations is installed
         run: docker compose exec -T php bin/console -e test doctrine:migrations:migrate --no-interaction
-      - name: Install Tools Dependencies
-        run: |
-          chmod +x .github/scripts/install_tools.sh
-          .github/scripts/install_tools.sh
       - name: Run PHPStan
         run: make phpstan
       - name: Run PHP CS Fixer
