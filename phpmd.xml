@@ -6,10 +6,10 @@
     <description>My custom ruleset that combines various standard PHPMD rules</description>
 
     <!-- Include whole rulesets -->
-    <rule ref="tools/phpmd/vendor/phpmd/phpmd/src/main/resources/rulesets/cleancode.xml"/>
-    <rule ref="tools/phpmd/vendor/phpmd/phpmd/src/main/resources/rulesets/codesize.xml"/>
-    <rule ref="tools/phpmd/vendor/phpmd/phpmd/src/main/resources/rulesets/controversial.xml"/>
-    <rule ref="tools/phpmd/vendor/phpmd/phpmd/src/main/resources/rulesets/design.xml"/>
-    <rule ref="tools/phpmd/vendor/phpmd/phpmd/src/main/resources/rulesets/naming.xml"/>
-    <rule ref="tools/phpmd/vendor/phpmd/phpmd/src/main/resources/rulesets/unusedcode.xml"/>
+    <rule ref="vendor/phpmd/phpmd/src/main/resources/rulesets/cleancode.xml"/>
+    <rule ref="vendor/phpmd/phpmd/src/main/resources/rulesets/codesize.xml"/>
+    <rule ref="vendor/phpmd/phpmd/src/main/resources/rulesets/controversial.xml"/>
+    <rule ref="vendor/phpmd/phpmd/src/main/resources/rulesets/design.xml"/>
+    <rule ref="vendor/phpmd/phpmd/src/main/resources/rulesets/naming.xml"/>
+    <rule ref="vendor/phpmd/phpmd/src/main/resources/rulesets/unusedcode.xml"/>
 </ruleset>

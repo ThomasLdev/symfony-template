@@ -84,3 +84,6 @@ phpunit-unit:
 
 phpunit-functional:
 	@$(PHP_CONT) bin/phpunit --testsuite FunctionalTests
+
+tailwind-watch:
+	@$(PHP_CONT) bin/console tailwind:build --watch
