@@ -74,4 +74,10 @@ phpcs:
 ## —— Tests 🎵 ———————————————————————————————————————————————————————————————
 
 phpunit:
-	@$(PHP_CONT) tools/phpunit/vendor/bin/phpunit --configuration phpunit.xml
+	@$(PHP_CONT) bin/phpunit
+
+phpunit-unit:
+	@$(PHP_CONT) bin/phpunit --testsuite UnitTests
+
+phpunit-functional:
+	@$(PHP_CONT) bin/phpunit --testsuite FunctionalTests
