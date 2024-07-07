@@ -47,8 +47,12 @@ jobs:
         run: docker compose exec -T php bin/console -e test doctrine:migrations:migrate --no-interaction
       - name: Run PHPStan
         run: make phpstan
+      - name: Run PHPMD
+        run: make phpmd
       - name: Run PHP CS Fixer
-        run: make csfixer
+        run: make phpcs
+      - name: Run Twig CS
+        run: make twig-linter
       - name: Run PHPUnit
         if: false # Remove this line if PHPUnit is installed
         run: docker compose exec -T php bin/phpunit
