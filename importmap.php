@@ -22,4 +22,35 @@ return [
     '@symfony/stimulus-bundle' => [
         'path' => './vendor/symfony/stimulus-bundle/assets/dist/loader.js',
     ],
+    '@hotwired/turbo' => [
+        'version' => '7.3.0',
+    ],
+    'mini-svg-data-uri' => [
+        'version' => '1.4.4',
+    ],
+    'tailwindcss/plugin' => [
+        'version' => '3.4.4',
+    ],
+    'tailwindcss/defaultTheme' => [
+        'version' => '3.4.4',
+    ],
+    'tailwindcss/colors' => [
+        'version' => '3.4.4',
+    ],
+    'picocolors' => [
+        'version' => '1.0.1',
+    ],
+    'flowbite' => [
+        'version' => '2.4.1',
+    ],
+    '@popperjs/core' => [
+        'version' => '2.11.8',
+    ],
+    'flowbite-datepicker' => [
+        'version' => '1.3.0',
+    ],
+    'flowbite/dist/flowbite.min.css' => [
+        'version' => '2.4.1',
+        'type' => 'css',
+    ],
 ];

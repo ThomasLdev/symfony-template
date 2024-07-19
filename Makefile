@@ -24,7 +24,10 @@ build: ## Builds the Docker images
 up: ## Start the docker hub in detached mode (no logs)
 	@$(DOCKER_COMP) up --detach
 
-start: build up ## Build and start the containers
+start: up
+	@$(PHP_CONT) php bin/console tailwind:build
+
+build: build up ## Build and start the containers
 
 down: ## Stop the docker hub
 	@$(DOCKER_COMP) down --remove-orphans
@@ -84,6 +87,9 @@ phpunit-unit:
 
 phpunit-functional:
 	@$(PHP_CONT) bin/phpunit --testsuite FunctionalTests
+
+tailwind:
+	@$(PHP_CONT) bin/console tailwind:build
 
 tailwind-watch:
 	@$(PHP_CONT) bin/console tailwind:build --watch
